@@ -1,0 +1,14 @@
+deployment:
+  svc: true
+  bff: true
+  ui: true
+
+product:
+  info:
+    data:
+      description: "OneCX Parameter"
+      imageUrl: ""
+      iconName: "pi-sitemap"
+      displayName: "OneCX Parameter"
+      basePath: "/parameter"
+      
