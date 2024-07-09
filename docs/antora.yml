@@ -1,0 +1,8 @@
+name: onecx-parameter
+title: Parameter Management
+version: latest
+start_page: onecx-parameter:index.adoc
+nav:
+  - modules/onecx-parameter/nav.adoc
+  - modules/onecx-parameter-svc/nav.adoc
+  - modules/onecx-parameter-bff/nav.adoc
