@@ -1,2 +1,2 @@
 # onecx-parameter
-OneCx Parameter Management
+OneCX Parameter Management
