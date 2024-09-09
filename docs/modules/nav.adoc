@@ -1,1 +1,1 @@
-* xref:onecx-parameter:index.adoc[Parameter Management]
+* xref:general:index.adoc[General]
