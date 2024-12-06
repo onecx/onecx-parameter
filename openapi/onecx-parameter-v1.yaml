@@ -49,7 +49,7 @@
         tags:
           - parameter
         description: Get parameters by application id
-        operationId: getApplicationParameters
+        operationId: getParameters
         parameters:
           - name: productName
             in: path
@@ -78,7 +78,7 @@
           clientCredentials:
             tokenUrl: https://oauth.simple.api/token
             scopes:
-              ocx-pa-ap:read: Grants read access to application parameters
+              ocx-pa-ap:read: Grants read access to parameters
               ocx-pa-me:write: Grants write access to parameter metrics
     schemas:
       ParametersResponse:
