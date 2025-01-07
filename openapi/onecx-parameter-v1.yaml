@@ -91,7 +91,7 @@
           count:
             format: int64
             type: integer
-          type:
+          description:
             type: string
           defaultValue:
             type: string
