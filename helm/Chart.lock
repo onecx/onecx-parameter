@@ -10,6 +10,6 @@ dependencies:
   version: 0.0.0-rc.87
 - name: onecx-parameter-ui
   repository: oci://ghcr.io/onecx/charts
-  version: 0.0.0-rc.64
-digest: sha256:61ddad9bf653cc3bd9366fd762195c21f4c3cc1b998f8e534775d471d376761c
-generated: "2025-02-17T11:33:45.986744142Z"
+  version: 0.0.0-rc.65
+digest: sha256:245503c29b0e728f9c04df432d595dbd9b8323342e4ae9beb352f6f1311f399a
+generated: "2025-02-17T12:08:21.698906186Z"
