@@ -84,7 +84,7 @@
       ParametersResponse:
         type: object
         additionalProperties:
-          type: string
+          type: object
       ParameterInfo:
         type: object
         properties:
@@ -94,9 +94,9 @@
           description:
             type: string
           defaultValue:
-            type: string
+            type: object
           currentValue:
-            type: string
+            type: object
       ParametersBucket:
         type: object
         properties:
