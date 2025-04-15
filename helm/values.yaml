@@ -2,6 +2,7 @@ deployment:
   svc: true
   bff: true
   ui: true
+  operator: true
 
 product:
   info:
