@@ -1,0 +1,20 @@
+= OneCX Parameter Management
+
+==  Concept for Microfrontends
+
+1. The Shell requests the workspaceConfig from the ShellBFF.
+2. The ShellBFF retrieves the parameters from the ParameterSVC for all applications which are part of the current workspace.
+3. The ParameterSVC returns the parameters to the ShellBFF.
+4. The ShellBFF sends the workspaceConfig, including the parameters and a flag indicating whether the parameter fetch was successful, back to the Shell.
+5. The Shell caches the parameters only if the fetch status indicates success.
+
+[mermaid]
+....
+ sequenceDiagram
+    Shell->>+ShellBFF: get workspaceConfig
+    ShellBFF->>-ParameterSVC: get parameters
+    Note over ShellBFF: Cached parameters
+    ParameterSVC-->>+ShellBFF: parameters
+    ShellBFF-->>Shell: workspaceConfig with parameters and fetch status
+    Note over Shell: Cache/Update parameters if fetch status is successful 
+....
