@@ -1,4 +1,4 @@
 * xref:general:index.adoc[General]
 * xref:general:concept.adoc[Concept]
-** External API(s)
-*** xref:onecx-parameter:general:openapi/onecx-parameter-openapi-v1.adoc[Parameter Management V1]
+* External API(s)
+** xref:onecx-parameter:general:openapi/onecx-parameter-openapi-v1.adoc[Parameter Management V1]
