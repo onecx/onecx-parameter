@@ -10,9 +10,9 @@ dependencies:
   version: 1.0.0
 - name: onecx-parameter-ui
   repository: oci://ghcr.io/onecx/charts
-  version: 1.1.0-rc.1
+  version: 1.1.0
 - name: onecx-parameter-operator
   repository: oci://ghcr.io/onecx/charts
   version: 1.0.0
-digest: sha256:7cb9aa05c7a4853aeded3602165124a6d55258abce8730ddb2e5d9e6b3a9c04c
-generated: "2025-04-28T14:06:50.519888659Z"
+digest: sha256:6d7b5026d558c7af4b540c5d514499265125ad7d4373c793676d40c056802c15
+generated: "2025-04-28T14:08:50.936675069Z"
