@@ -14,6 +14,10 @@ Parameter Management (Parameter Management) refers to storing and retrieving Par
 == Key Features
 * Parameter item Storage and Retrieval: Store and retrieve Parameter items usable in context of OneCX applications.
 
+== How to use with Quarkus
+We provide a Quarkus extension that enables applications to seamlessly utilize parameters. For detailed instructions on how to use it, please refer to the following documentation:
+link:https://onecx.github.io/docs/onecx-quarkus/current/onecx-quarkus/onecx-parameters.html[Onecx Quarkus Parameters Extension].
+
 == Issue tracking
 All OneCX Parameter Management issues are tracked and maintained at the link:https://xyz.com[issue tracking tool].
 
