@@ -1,0 +1,143 @@
+---
+  openapi: 3.0.3
+  info:
+    title: onecx-parameters v2
+    version: "2.0.0"
+  servers:
+    - url: http://onecx-parameter/
+  tags:
+    - name: parameter
+  paths:
+    /v2/parameters/{productName}/{appId}:
+      post:
+        security:
+          - oauth2: [ ocx-pa-me:write ]
+        tags:
+          - parameter
+        description: Create history and usage of parameters on the client side.
+        operationId: bucketRequest
+        parameters:
+          - name: productName
+            in: path
+            required: true
+            schema:
+              type: string
+          - name: appId
+            in: path
+            required: true
+            schema:
+              type: string
+        requestBody:
+          required: true
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ParametersBucket'
+        responses:
+          204:
+            description: OK
+          400:
+            description: Bad request
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ProblemDetailResponse'
+    /v1/parameters/{productName}/{appId}:
+      get:
+        security:
+          - oauth2: [ ocx-pa-ap:read ]
+        tags:
+          - parameter
+        description: Get currently defined parameters of the application in the product.
+        operationId: getParameters
+        parameters:
+          - name: productName
+            in: path
+            required: true
+            schema:
+              type: string
+          - name: appId
+            in: path
+            required: true
+            schema:
+              type: string
+        responses:
+          200:
+            description: OK
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ParametersResponse'
+          404:
+            description: Not Found
+  components:
+    securitySchemes:
+      oauth2:
+        type: oauth2
+        flows:
+          clientCredentials:
+            tokenUrl: https://oauth.simple.api/token
+            scopes:
+              ocx-pa-ap:read: Grants read access to parameters
+              ocx-pa-me:write: Grants write access to parameter history and usage
+    schemas:
+      ParametersResponse:
+        type: object
+        additionalProperties:
+          type: object
+      ParameterInfo:
+        type: object
+        properties:
+          count:
+            format: int64
+            type: integer
+          defaultValue:
+            type: object
+          currentValue:
+            type: object
+      ParametersBucket:
+        type: object
+        properties:
+          parameters:
+            type: object
+            additionalProperties:
+              $ref: '#/components/schemas/ParameterInfo'
+          instanceId:
+            type: string
+          start:
+            format: date-time
+            type: string
+            example: 2022-03-10T12:15:50-04:00
+          end:
+            format: date-time
+            type: string
+            example: 2022-03-10T12:15:50-04:00
+      ProblemDetailResponse:
+        type: object
+        properties:
+          errorCode:
+            type: string
+          detail:
+            type: string
+          params:
+            type: array
+            items:
+              $ref: '#/components/schemas/ProblemDetailParam'
+          invalidParams:
+            type: array
+            items:
+              $ref: '#/components/schemas/ProblemDetailInvalidParam'
+      ProblemDetailParam:
+        type: object
+        properties:
+          key:
+            type: string
+          value:
+            type: string
+      ProblemDetailInvalidParam:
+        type: object
+        properties:
+          name:
+            type: string
+          message:
+            type: string
