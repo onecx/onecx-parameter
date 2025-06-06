@@ -42,7 +42,7 @@
               application/json:
                 schema:
                   $ref: '#/components/schemas/ProblemDetailResponse'
-    /v1/parameters/{productName}/{appId}:
+    /v2/parameters/{productName}/{appId}:
       get:
         security:
           - oauth2: [ ocx-pa-ap:read ]
