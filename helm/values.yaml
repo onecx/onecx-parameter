@@ -9,7 +9,9 @@ product:
     data:
       description: "OneCX Parameter"
       imageUrl: ""
-      iconName: "pi-sitemap"
+      iconName: "pi-sliders-h"
       displayName: "OneCX Parameter"
-      basePath: "/parameter"
+      basePath: /parameter
+      provider: "OneCX Team"
+      classifications: [ "Administration" ]
       
