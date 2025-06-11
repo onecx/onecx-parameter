@@ -9,7 +9,7 @@ product:
     data:
       description: "OneCX Parameter"
       imageUrl: ""
-      iconName: "pi-sliders-h"
+      iconName: "sliders-h"
       displayName: "OneCX Parameter"
       basePath: /parameter
       provider: "OneCX Team"
