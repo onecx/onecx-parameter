@@ -13,6 +13,6 @@ dependencies:
   version: 1.5.0-rc.6
 - name: onecx-parameter-operator
   repository: oci://ghcr.io/onecx/charts
-  version: 1.2.0-rc.7
-digest: sha256:fcc31696759ec86f0d9ab5afd3a850c236d6ad26d0c7aabd5df323caf6ddbd48
-generated: "2025-07-03T07:36:33.949855091Z"
+  version: 1.2.0-rc.8
+digest: sha256:dce862dd7fb9ddc5addcbdfcbd9255f9da8acb7f5b4d15905622ddd0f6dca598
+generated: "2025-07-04T06:26:04.727777019Z"
