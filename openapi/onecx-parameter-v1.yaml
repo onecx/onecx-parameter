@@ -1,12 +1,14 @@
 ---
   openapi: 3.0.3
   info:
-    title: onecx-parameters v1
+    title: onecx-parameter external service V1 (deprecated)
+    description: This API provides endpoints to retrieve application Parameters and create History bucket requests.
     version: "1.0.0"
   servers:
     - url: http://onecx-parameter/
   tags:
     - name: parameter
+      description: Retrieve Parameters and create History
   paths:
     /v1/{productName}/{appId}/history:
       post:
@@ -14,7 +16,7 @@
           - oauth2: [ ocx-pa-me:write ]
         tags:
           - parameter
-        description: Create history bucket request
+        description: Create a history bucket request
         operationId: bucketRequest
         parameters:
           - name: productName
@@ -35,7 +37,7 @@
                 $ref: '#/components/schemas/ParametersBucket'
         responses:
           204:
-            description: OK
+            description: History bucket request created successfully
           400:
             description: Bad request
             content:
@@ -48,7 +50,7 @@
           - oauth2: [ ocx-pa-ap:read ]
         tags:
           - parameter
-        description: Get parameters by application id
+        description: Get parameters by application id and product name
         operationId: getParameters
         parameters:
           - name: productName
@@ -63,13 +65,13 @@
               type: string
         responses:
           200:
-            description: OK
+            description: Parameters retrieved successfully
             content:
               application/json:
                 schema:
                   $ref: '#/components/schemas/ParametersResponse'
           404:
-            description: Not Found
+            description: Parameters not Found
   components:
     securitySchemes:
       oauth2:
