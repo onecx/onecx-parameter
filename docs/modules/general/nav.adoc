@@ -2,3 +2,5 @@
 * xref:general:migration.adoc[Migration Guide]
 * External API(s)
 ** xref:onecx-parameter:general:openapi/onecx-parameter-openapi-v1.adoc[Parameter Management V1]
+** xref:onecx-parameter:general:openapi/onecx-parameter-openapi-v2.adoc[Parameter Management V2]
+
