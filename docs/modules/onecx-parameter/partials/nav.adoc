@@ -1,10 +1,11 @@
 * xref:documentation:onecx-parameter:index.adoc[Parameter]
-** xref:documentation:onecx-parameter:migration.adoc[Migration Guide]
-** xref:documentation:onecx-parameter:openapi/onecx-parameter-openapi-v1.adoc[OpenAPI v1]
-** xref:documentation:onecx-parameter:openapi/onecx-parameter-openapi-v2.adoc[OpenAPI v2]
 +
 include::documentation:onecx-parameter-ui:partial$nav.adoc[]
 +
 include::documentation:onecx-parameter-bff:partial$nav.adoc[]
 +
 include::documentation:onecx-parameter-svc:partial$nav.adoc[]
+
+** xref:documentation:onecx-parameter:migration.adoc[Migration Guide]
+** xref:documentation:onecx-parameter:openapi/onecx-parameter-openapi-v1.adoc[OpenAPI v1]
+** xref:documentation:onecx-parameter:openapi/onecx-parameter-openapi-v2.adoc[OpenAPI v2]
