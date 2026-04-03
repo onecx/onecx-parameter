@@ -4,7 +4,7 @@ dependencies:
   version: 0.4.0
 - name: onecx-parameter-svc
   repository: oci://ghcr.io/onecx/charts
-  version: 1.7.0-rc.8
+  version: 1.7.0-rc.9
 - name: onecx-parameter-bff
   repository: oci://ghcr.io/onecx/charts
   version: 1.6.0-rc.8
@@ -14,5 +14,5 @@ dependencies:
 - name: onecx-parameter-operator
   repository: oci://ghcr.io/onecx/charts
   version: 1.7.0-rc.11
-digest: sha256:c135d71be34d4beed00ec3b86a2312631553f7f6969ff014c4b7f4c9a788abab
-generated: "2026-04-03T10:21:23.018964825Z"
+digest: sha256:8c08179e403b1537618f79046428a1e8905e3af88e1ee80fca4f69fd6904341f
+generated: "2026-04-03T17:52:22.883816413Z"
